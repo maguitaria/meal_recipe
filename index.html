@@ -15,19 +15,21 @@
 </head>
 
 <body>
-   
-        <header class="page-header header container-fluid ">
-            <div class="overlay">
+
+    <header class="container fluid">
+        <div class="overlay">
             <div class="meal-wrapper">
                 <div class="meal-search">
-
                     <h1>Food recipes for you</h1>
-                    <blockquote> Some quote here</blockquote>
+                    <blockquote> “Life is uncertain. Eat dessert first.”</blockquote>
                     <div class="meal-search-box">
-                        <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input" />
-                         <button type="submit" class="search-btn btn" id="search-btn">
-              <i class="fas fa-search"></i>
-            </button>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="search-input">
+                            <button class="btn btn-outline-secondary" type="submit" id="search-btn">Go</button>
+                        </div>
+
+
                     </div>
                 </div>
                 <div class="meal-result">
@@ -35,30 +37,27 @@
 
                     <div id="meal">
                         <!-- Meal item -->
-                    <!-- <div class="row">
+                        <!-- <div class="row">
                       <div class=" meal-item col-sm"  data-id="${meal.idMeal}">
             <h3 class="media-heading">${meal.strMeal}</h3>
             <img src="${meal.strMealThumb}" class="img-fluid">
                    <a href="#" class="recipe-btn"> Get recipe</a>
         </div>
     </div> -->
-               
-                </div>
-                <div class="meal-details">
-                    <!-- recipe close btn-->
-                    <button type="button" class="btn btn-primary" id="recipe-close-btn">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    
-                    <!-- Meal content-->
-                    <!-- <div class="meal-details-content">
+
+                    </div>
+                    <div class="meal-details">
+                        <!-- recipe close btn-->
+                        <button type="button" class="btn btn-primary" id="recipe-close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <!-- Meal content-->
+                        <!-- <div class="meal-details-content">
                         <h2 class="meal-details-content">Meals name here</h2>
                         <p class="recipe-category"> Category name</p>
                         <div class="recipe-instruct">
                             <h3>Instructions:</h3>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reiciendis similique
-                                provident quae, nostrum non, mollitia ea quaerat perferendis ullam unde laborum velit
-                                facilis quisquam praesentium? Autem quisquam non veniam!</p>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reiciendis similique
                                 provident quae, nostrum non, mollitia ea quaerat perferendis ullam unde laborum velit
                                 facilis quisquam praesentium? Autem quisquam non veniam!</p>
@@ -72,32 +71,12 @@
 
 
                     </div>
-                    <!-- experiment -->
-                    <!-- <div class="container features"> -->
-        <!-- <div class="row">
-      
-        
-        <div class="col-md">
-            <h3 class="feature-title">Lorem ipsum</h3>
-            <img src="images/column-2.jpg" class="img-fluid">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-        </div>
-        
-        <div class="col-md">
-            <h3 class="feature-title">Lorem ipsum</h3>
-            <img src="images/column-2.jpg" class="img-fluid">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-        </div>
-       
-    </div>
-</div> -->
-
-<!-- end -->
+                    
                 </div>
             </div>
 
-        </header>
-  
+    </header>
+
     </div>
     </div>
 

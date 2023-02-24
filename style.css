@@ -1,20 +1,26 @@
+body {
+    height: 100vh;
+}
 
-.header {
-    background-image: url(pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg) ;
+.container-fluid {
+    height: 100%;
+background-image: url(pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-    opacity: 0.7;
-}
-.overlay {
+    text-align: center;
+}       
+
+ .overlay {
     position: absolute;
     min-height: 100%;
     min-width: 100%;
     left: 0;
     top: 0;
     background: rgba(71, 93, 190, 0.227);
+text-align: center;
 }
-.meal-wrapper {
+/* .meal-wrapper {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
@@ -31,4 +37,4 @@ img {
 
 .meal-details-content p:not(.recipe-category) {
     padding: 1rem 0;
-}
+} */

@@ -10,7 +10,7 @@ $(document).ready(function () {
 searchBtn.addEventListener('click', getMealList); // get meal which matches the ingridient in input
 mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
-mealDetailsContent.parentElement.classList.remove('showRecipe');
+    mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 // get Meal List - create div on the page
 function getMealList() {
@@ -21,14 +21,18 @@ function getMealList() {
         .then(data => {
             console.log(data);
             let html = "";
+            html += ' <div class="row">';
             if (data.meals) {
                 data.meals.forEach(meal => {
                     html += `
-
-                      <div class=" meal-item col-sm"  data-id="${meal.idMeal}">
-            <h3 class="media-heading">${meal.strMeal}</h3>
-            <img src="${meal.strMealThumb}" class="img-fluid">
+ 
+                    <div class="col-md-4">
+                      <div class="meal-item"  data-id="${meal.idMeal}">
+            <h3 class="media-heading ">${meal.strMeal}</h3>
+            <img src="${meal.strMealThumb}" class="img-fluid img-thumbnailrounded 
+            mx-auto d-block">
                    <a href="#" class="recipe-btn"> Get recipe</a>
+        </div>
         </div>
 
                     `;
