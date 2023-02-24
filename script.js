@@ -2,7 +2,10 @@ const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
-
+// jQuery for background
+$(document).ready(function () {
+    $('.header').height($(window).height());
+})
 // event Listeners
 searchBtn.addEventListener('click', getMealList); // get meal which matches the ingridient in input
 mealList.addEventListener('click', getMealRecipe);
@@ -21,15 +24,13 @@ function getMealList() {
             if (data.meals) {
                 data.meals.forEach(meal => {
                     html += `
-                       <div class="meal-item" data-id="${meal.idMeal}">
-                            <div class="media-object">
-                                <img src="${meal.strMealThumb}" class="img-responsive" class="img-rounded" alt="food">
-                            </div>
-                            <div class="media-heading">
-                                <h3>${meal.strMeal}</h3>
-                                <a href="#" class="recipe-btn"> Get recipe</a>
-                            </div>
-                        </div> 
+
+                      <div class=" meal-item col-sm"  data-id="${meal.idMeal}">
+            <h3 class="media-heading">${meal.strMeal}</h3>
+            <img src="${meal.strMealThumb}" class="img-fluid">
+                   <a href="#" class="recipe-btn"> Get recipe</a>
+        </div>
+
                     `;
                 });
                 mealList.classList.remove('notFound');

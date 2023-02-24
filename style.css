@@ -1,10 +1,18 @@
 
 .header {
-    /* background-image: url(pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg) ; */
-    background-color: rgb(200, 200, 158);
+    background-image: url(pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg) ;
     background-size: cover;
     background-position: center;
     position: relative;
+    opacity: 0.7;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(71, 93, 190, 0.227);
 }
 .meal-wrapper {
     max-width: 1280px;
