@@ -1,6 +1,26 @@
+
 .header {
-    background-image: url(pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg) ;
+    /* background-image: url(pawel-czerwinski-vI5XwPbGvmY-unsplash.jpg) ; */
+    background-color: rgb(200, 200, 158);
     background-size: cover;
     background-position: center;
     position: relative;
+}
+.meal-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.meal-details-content {
+    margin: 2rem;
+}
+
+.meal-details-content p:not(.recipe-category) {
+    padding: 1rem 0;
 }
