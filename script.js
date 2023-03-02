@@ -26,12 +26,12 @@ function getMealList() {
                 data.meals.forEach(meal => {
                     html += `
  
-                    <div class="col-md-4">
-                      <div class="meal-item"  data-id="${meal.idMeal}">
+                    <div class="col-md-4 mg-auto">
+                      <div class="meal-item "  data-id="${meal.idMeal}">
             <h3 class="media-heading ">${meal.strMeal}</h3>
             <img src="${meal.strMealThumb}" class="img-fluid img-thumbnailrounded 
-            mx-auto d-block">
-                   <a href="#" class="recipe-btn"> Get recipe</a>
+            mx-auto d-block rounded-circle">
+                   <a href="#"  class="recipe-btn pt-3 "> <button class="btn btn-outline-dark btn-sm ">Get recipe</button> </a>
         </div>
         </div>
 
@@ -80,3 +80,4 @@ function mealRecipeModal(meal) {
     mealDetailsContent.parentElement.classList.add('showRecipe');
 
 }
+

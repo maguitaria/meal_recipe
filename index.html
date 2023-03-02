@@ -16,24 +16,30 @@
 
 <body>
 
-    <header class="container fluid">
+    <header class="container-fluid">
         <div class="overlay">
             <div class="meal-wrapper">
                 <div class="meal-search">
-                    <h1>Food recipes for you</h1>
-                    <blockquote> “Life is uncertain. Eat dessert first.”</blockquote>
+                    <h1 class="mt-lg-4 mb-0">Will to discover new recipes?</h1>
+                    <blockquote class="mt-lg-4 text-center"> “Life is uncertain. Eat dessert first.”</blockquote>
                     <div class="meal-search-box">
-
+                  
                         <div class="input-group col-xs-2 justify-content-center ">
                             <input type="text" class="form-control-sm " value="#563d7c" id="search-input">
                             <button class="btn btn-outline-secondary" type="submit" id="search-btn">Go</button>
                         </div>
-
+                    <h4 class="pt-3 text-center"> Results:
+                        <div class="meal-details align-self-center mx-auto ">
+                            <!-- recipe close btn-->
+                            <button type="button" class="btn btn-primary" id="recipe-close-btn">
+                                <i class="fas fa-times "></i>
+                            </button>
+                    </h4>
 
                     </div>
                 </div>
+               
                 <div class="meal-result">
-                    <h2 class="title" class="text-center"> Results:</h2>
 
                     <div id="meal">
                         <!-- Meal item -->
@@ -46,14 +52,10 @@
     </div> -->
 
                     </div>
-                    <div class="meal-details">
-                        <!-- recipe close btn-->
-                        <button type="button" class="btn btn-primary" id="recipe-close-btn">
-                            <i class="fas fa-times"></i>
-                        </button>
 
-                        <!-- Meal content-->
-                        <!-- <div class="meal-details-content">
+
+                    <!-- Meal content-->
+                    <!-- <div class="meal-details-content">
                         <h2 class="meal-details-content">Meals name here</h2>
                         <p class="recipe-category"> Category name</p>
                         <div class="recipe-instruct">
@@ -70,10 +72,10 @@
                         </div> -->
 
 
-                    </div>
-
                 </div>
+
             </div>
+        </div>
 
     </header>
 
