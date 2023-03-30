@@ -1,5 +1,5 @@
 ### Meal recipe app
-# Here is basic static app implementation.
+ Here is basic static app implementation.
  ## New things which I learned throughout implementation:
  * fetch API
  * Bootstrap 5
